@@ -1,15 +1,18 @@
 
 var data;
-
+var title;
 function setInfo(info) {
-	data = JSON.stringify(createItemSet(info));
+	data = JSON.stringify(createItemSet(info), null, 2);
+	var json = "text/json;charset=utf-8," + encodeURIComponent(data);
+	$("#download").attr("href", "data:" + json);
+	$("#download").attr("download", title + ".json");
+	$("#title").text(title);
 	$("#LeagueItemSet").val(data);
 }
 
 $("#copy").click(function() {
 	copy();
 })
-
 window.addEventListener('DOMContentLoaded', function() {
     chrome.tabs.query({
         active: true,
@@ -28,7 +31,7 @@ function copy() {
 }
 
 function createItemSet(blocks) {
-	var title = blocks[0];
+	title = blocks[0];
 	blocks.splice(0,1);
 	var out = {
 		"title" : title, 

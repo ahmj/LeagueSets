@@ -7,22 +7,29 @@
 
   "background": {
     "persistent": false,
-    "scripts": ["background.js"]
+    "scripts": ["./scripts/background.js"]
   },
 
   "content_scripts": [
   	{
   		"matches": ["http://www.lolking.net/guides/*"],
-  		"js": ["jquery.min.js", "script.js"],
+  		"js": ["./public/js/jquery.min.js", "./scripts/lolking.js"],
       "run_at":     "document_idle",
       "all_frames": false
-  	}
+  	},
+    {
+      "matches": ["http://www.probuilds.net/guide/*"],
+      "js": ["./public/js/jquery.min.js", "./scripts/probuilds.js"],
+      "run_at":     "document_idle",
+      "all_frames": false
+    }
   ],
 
+
   "page_action": {
-    "default_icon":"icon.png",
+    "default_icon":"./public/icon.png",
     "default_title": "LeagueSet",
-    "default_popup": "popup.html"
+    "default_popup": "./public/popup.html"
   },
 
   "permissions": [
