@@ -1,17 +1,5 @@
-
 /*
-BLOCKS = [
-"TITLE",
-
-{
-	header: "test",
-	items: [
-	114,251
-	]
-},
-...
-]
-
+*	LOLKING 
 */
 chrome.runtime.sendMessage({
     from:    'content',

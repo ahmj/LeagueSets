@@ -2,8 +2,8 @@
   "manifest_version": 2,
 
   "name": "LeagueSets",
-  "description": "Riot API Challenge 2",
-  "version": "1.0",
+  "description": "A tool used to create in-game item sets using guides from popular League of Legends fansites such as LOKING, Mobafire, Champion.gg, and ProBuilds.",
+  "version": "1.0.0",
 
   "background": {
     "persistent": false,
@@ -22,9 +22,14 @@
       "js": ["./public/js/jquery.min.js", "./scripts/probuilds.js"],
       "run_at":     "document_idle",
       "all_frames": false
+    },
+    {
+      "matches": ["*://champion.gg/champion/*"],
+      "js": ["./public/js/jquery.min.js", "./scripts/championgg.js"],
+      "run_at":     "document_idle",
+      "all_frames": false
     }
   ],
-
 
   "page_action": {
     "default_icon":"./public/icon.png",

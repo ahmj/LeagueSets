@@ -1,6 +1,7 @@
 
 var data;
 var title;
+
 function setInfo(info) {
 	data = JSON.stringify(createItemSet(info), null, 2);
 	var json = "text/json;charset=utf-8," + encodeURIComponent(data);
@@ -33,6 +34,10 @@ function copy() {
 function createItemSet(blocks) {
 	title = blocks[0];
 	blocks.splice(0,1);
+
+	blocks.push(consumablesBlock());
+	blocks.push(trinketBlock());
+
 	var out = {
 		"title" : title, 
 		"type": "global",
@@ -77,4 +82,25 @@ function createItemBlock(items) {
 		itemsArray.push(item);
 	}
 	return itemsArray;
+}
+
+function consumablesBlock() {
+	var header = 'Consumables';
+	var items = [2003, 2004, 2041, 2043, 2044, 2137, 2138, 2139,2140];
+
+	var ITEM_BLOCK = {
+		header: header,
+		items: items
+	};
+	return ITEM_BLOCK;
+}
+
+function trinketBlock() {
+	var header = 'Trinkets';
+	var items = [3340,3361,3362, 3341, 3364, 3342,3363];
+	var ITEM_BLOCK = {
+		header: header,
+		items: items
+	};
+	return ITEM_BLOCK;
 }
