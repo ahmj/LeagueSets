@@ -35,8 +35,8 @@ function createItemSet(blocks) {
 	title = blocks[0];
 	blocks.splice(0,1);
 
-	blocks.push(consumablesBlock());
-	blocks.push(trinketBlock());
+	blocks.unshift(consumablesBlock());
+	blocks.unshift(trinketBlock());
 
 	var out = {
 		"title" : title, 
@@ -86,7 +86,7 @@ function createItemBlock(items) {
 
 function consumablesBlock() {
 	var header = 'Consumables';
-	var items = [2003, 2004, 2041, 2043, 2044, 2137, 2138, 2139,2140];
+	var items = ["2003", "2004", "2041", "2043", "2044", "2137", "2138", "2139","2140"];
 
 	var ITEM_BLOCK = {
 		header: header,
@@ -97,7 +97,7 @@ function consumablesBlock() {
 
 function trinketBlock() {
 	var header = 'Trinkets';
-	var items = [3340,3361,3362, 3341, 3364, 3342,3363];
+	var items = ["3340","3361","3362", "3341", "3364", "3342","3363"];
 	var ITEM_BLOCK = {
 		header: header,
 		items: items
