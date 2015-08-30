@@ -2,8 +2,13 @@
   "manifest_version": 2,
 
   "name": "LeagueSets",
-  "description": "A tool used to create in-game item sets using guides from popular League of Legends fansites such as LOKING, Mobafire, Champion.gg, and ProBuilds.",
-  "version": "1.0.0",
+  "description": "A tool used to create in-game item sets using guides from popular fansites such as LOKING, Mobafire, Champion.gg, and ProBuilds.",
+  "version": "1.0.1",
+  "icons": {
+    "128": "./public/icon.png",
+    "48": "./public/icon.png",
+    "16": "./public/icon.png"
+  },
 
   "background": {
     "persistent": false,
