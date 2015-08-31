@@ -5,15 +5,16 @@ var title;
 function setInfo(info) {
 	data = JSON.stringify(createItemSet(info), null, 2);
 	var json = "text/json;charset=utf-8," + encodeURIComponent(data);
-	$("#download").attr("href", "data:" + json);
-	$("#download").attr("download", title + ".json");
-	$("#title").text(title);
-	$("#LeagueItemSet").val(data);
+	document.getElementById("download").setAttribute("href", "data:" + json);
+	document.getElementById("download").setAttribute("download", title + ".json");
+	document.getElementById("title").innerHTML = title;
+	document.getElementById("LeagueItemSet").value = data;
 }
 
-$("#copy").click(function() {
+document.getElementById("copy").addEventListener("click", function () {
 	copy();
 })
+
 window.addEventListener('DOMContentLoaded', function() {
     chrome.tabs.query({
         active: true,
@@ -27,7 +28,7 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 function copy() {
-    var text = $('#LeagueItemSet').select();
+   	document.getElementById("LeagueItemSet").select();
     document.execCommand('copy');
 }
 

@@ -5,9 +5,9 @@
   "description": "A tool used to create in-game item sets using guides from popular fansites such as LOKING, Mobafire, Champion.gg, and ProBuilds.",
   "version": "1.0.1",
   "icons": {
-    "128": "./public/icon.png",
-    "48": "./public/icon.png",
-    "16": "./public/icon.png"
+    "128": "./common/icon128.png",
+    "48": "./common/icon48.png",
+    "16": "./common/icon16.png"
   },
 
   "background": {
@@ -18,32 +18,32 @@
   "content_scripts": [
   	{
   		"matches": ["http://www.lolking.net/guides/*"],
-  		"js": ["./public/js/jquery.min.js", "./scripts/lolking.js"],
+  		"js": ["./common/jquery.min.js", "./scripts/lolking.js"],
       "run_at":     "document_idle",
       "all_frames": false
   	},
     {
       "matches": ["http://www.probuilds.net/guide/*"],
-      "js": ["./public/js/jquery.min.js", "./scripts/probuilds.js"],
+      "js": ["./common/jquery.min.js", "./scripts/probuilds.js"],
       "run_at":     "document_idle",
       "all_frames": false
     },
     {
       "matches": ["*://champion.gg/champion/*"],
-      "js": ["./public/js/jquery.min.js", "./scripts/championgg.js"],
+      "js": ["./common/jquery.min.js", "./scripts/championgg.js"],
       "run_at":     "document_idle",
       "all_frames": false
     },
     {
       "matches": ["*://www.mobafire.com/league-of-legends/build/*"],
-      "js": ["./public/js/jquery.min.js", "./scripts/mobafire.js"],
+      "js": ["./common/jquery.min.js", "./scripts/mobafire.js"],
       "run_at":     "document_idle",
       "all_frames": false
     }
   ],
 
   "page_action": {
-    "default_icon":"./public/icon.png",
+    "default_icon":"./common/icon128.png",
     "default_title": "LeagueSet",
     "default_popup": "./public/popup.html"
   },
