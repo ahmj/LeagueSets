@@ -1,6 +1,6 @@
 
 # ![LS-LOGO](https://raw.githubusercontent.com/ahmj/LeagueSets/develop/src/common/icon48.png) LeagueSets 
--------------------------
+
 [**Get it for Chrome.**](https://chrome.google.com/webstore/detail/leaguesets/eoekgdlembbelehimiljbdnofnldepmc)
 
 **LeagueSets** is an easy to use chrome extension that allows users to quickly download in-game item sets from popular guide sites such as [Lolking](https://www.lolking.net), [Mobafire](https://www.mobafire.com), [ProBuilds](https://www.probuilds.net) and [ChampionGG](http://champion.gg)
@@ -9,7 +9,7 @@
 
 
 ## Installation Instructions
----
+
 ### Chrome
 
 
@@ -17,7 +17,7 @@ Go to the [Chrome App Store for LeagueSets](https://chrome.google.com/webstore/d
 
 
 #### Development
----
+
 1. Clone this repo.
 2. In Chrome, open the Extensions settings.
 3. On the Extensions settings page, click the "Developer Mode" checkbox.
@@ -25,7 +25,7 @@ Go to the [Chrome App Store for LeagueSets](https://chrome.google.com/webstore/d
 5. Enable the LeagueSets Extension
 
 ## Usage
----
+
 Install LeagueSets, then...
 
 1. Navigate to your faviourite League of Legends site such as Mobafire, Lolking, ProBuilds or Champion.GG
