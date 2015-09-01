@@ -36,3 +36,46 @@ Install LeagueSets, then...
     (i.e X:\Riot Games\League of Legends\Config\Champions\<Champion_Name>\Recommended\<filename>.json) 
 6. Queue up for your next League of Legends game!
 
+
+## Documentation
+
+### Adding sites
+Open up the manifest and add your script with a url to the guides section of the site.
+
+    {
+        "matches": ["URL_OF_GUIDES_SECTION"],
+        "js": ["./scripts/your_script"],
+        "run_at":"document_idle",
+        "all_frames": false
+    },
+    
+Your script will follow the same structure as outlined below, where it will return a **BLOCKS** object when called.
+
+    var BLOCKS;
+    chrome.runtime.sendMessage({
+        from:    'content',
+        subject: 'showPageAction'
+    });
+
+    chrome.runtime.onMessage.addListener(function(msg, sender, response) {
+        if ((msg.from === 'popup') && (msg.subject === 'guide')) {
+                //code here
+            response(BLOCK);
+        }
+    });
+    
+The **BLOCKS**  object must contain a title, and multiple item blocks for your set. The item sets require a title, and a list of item ids.
+
+    var BLOCKS = {
+        "title_of_guide",
+        {
+            header: "title_of_block",
+            items: ["2003","2004, ..."]
+        }, 
+        {
+         ..
+        }
+    };
+    
+Some sites may use there own custom item id's. In which case you will have to provide a JSON table of values to convert   
+(Remeber to include this file in the manifest). There is a template, /scripts/templates/table_template.js that may be helpful. The mobafire script is an example of this.
