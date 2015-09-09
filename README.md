@@ -3,7 +3,7 @@
 
 [**Get it for Chrome.**](https://chrome.google.com/webstore/detail/leaguesets/eoekgdlembbelehimiljbdnofnldepmc)
 
-**LeagueSets** is an easy to use chrome extension that allows users to quickly download in-game item sets from popular guide sites such as [Lolking](https://www.lolking.net), [Mobafire](https://www.mobafire.com), [ProBuilds](https://www.probuilds.net) and [ChampionGG](http://champion.gg)
+**LeagueSets** is an easy to use chrome extension that allows users to quickly download in-game item sets from popular guide sites such as [Lolking](https://www.lolking.net), [Mobafire](https://www.mobafire.com), [ProBuilds](https://www.probuilds.net), [ChampionGG](http://champion.gg) and [Solomid](http://solomid.net)
 
 **LeagueSets** is a submission for the [Riot Games API Challenge 2.0](https://developer.riotgames.com/discussion/announcements/show/2lxEyIcE), Item Sets Category. A Chrome extension allows the benefit of *convenience*, and allows player to use the *vast resources of information* already available on various sites. 
 

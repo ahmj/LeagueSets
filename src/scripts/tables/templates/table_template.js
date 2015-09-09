@@ -1,63 +1,63 @@
 var table = {
-	"": "3725", // Enchatment: Cinderhulk,
-	"": "3724", // Enchatment: Runeglaive,
+	"": "3725", // Enchatment: Cinderhulk (Ranger's Trailblazer)
+	"": "3724", // Enchatment: Runeglaive (Ranger's Trailblazer)
 	"": "3089", // Rabadon's Deathcap
-	"": "2009", // Total Biscuit of Rejuvenation
-	"": "3723", // Enchatment: Warrior
-	"": "3722", // Enchatment: Devourer
+	"": "2009", // Total Biscuit of Rejuvenation (OLD)
+	"": "3723", // Enchatment: Warrior (Ranger's Trailblazer)
+	"": "3722", // Enchatment: Devourer (Poacher's Knife)
 	"": "3087", // Statikk Shiv
-	"": "3721", // Enchantment: Cinderhulk
+	"": "3721", // Enchantment: Cinderhulk (Poacher's Knife)
 	"": "3086", // Zeal
 	"": "2004", // Mana Potion
-	"": "1319", // Enchantment: Homeguard
-	"": "3720", // Enchantment: Runeglaive
+	"": "1319", // Enchantment: Homeguard (Ninja Tabi)
+	"": "3720", // Enchantment: Runeglaive (Poacher's Knife)
 	"": "3085", // Runaan's Hurricane (Ranged Only)
 	"": "1318", // Enchantment: Distortion
 	"": "3084", // Overlord's Bloodmail
-	"": "1317", // Enchantment: Captain
+	"": "1317", // Enchantment: Captain (Ninja Tabi)
 	"": "2003", // Health Potion
 	"": "3083", // Warmog's Armor
-	"": "1316", // Enchantment: Alacrity
+	"": "1316", // Enchantment: Alacrity (Ninja Tabi)
 	"": "3082", // Warden's Mail
-	"": "1315", // Enchantment: Furor
-	"": "1314", // Enchantment: Homeguard
-	"": "1313", // Enchantment: Distortion
-	"": "1312", // Enchantment: Captain
+	"": "1315", // Enchantment: Furor (Ninja tabi)
+	"": "1314", // Enchantment: Homeguard (Sorcerer's Shoes)
+	"": "1313", // Enchantment: Distortion (Sorcerer's Shoes)
+	"": "1312", // Enchantment: Captain (Sorcerer's Shoes)
 	"": "3285", // Luden's Echo
-	"": "1311", // Enchantment: Alacrity
-	"": "1310", // Enchantment: Furor
-	"": "3726", // Enchantment: Devourer
+	"": "1311", // Enchantment: Alacrity (Sorcerer's Shoes)
+	"": "1310", // Enchantment: Furor (Sorcerer's Shoes)
+	"": "3726", // Enchantment: Devourer (Ranger's Trailblazer)
 	"": "3924", // Flesheater (Melee Only)
-	"": "2010", // Total Biscuit of Rejuvenation
+	"": "2010", // Total Biscuit of Rejuvenation (NEW)
 	"": "3711", // Poacher's Knife
 	"": "3098", // Frostfang
-	"": "3714", // Enchantment: Warrior
+	"": "3714", // Enchantment: Warrior (Skirmisher's Sabre)
 	"": "3713", // Ranger's Trailblazer
-	"": "1329", // Enchantment: Homeguard
+	"": "1329", // Enchantment: Homeguard (Boots of Mobility)
 	"": "3290", // Twin Shadows
-	"": "1328", // Enchantment: Distortion
-	"": "3710", // Enchantment: Devourer
+	"": "1328", // Enchantment: Distortion (Boots of Mobility)
+	"": "3710", // Enchantment: Devourer (Stalker's Blade)
 	"": "3097", // Targon's Brace
 	"": "3096", // Nomad's Medallion
 
 	"": "3091", // Wit's End
-	"": "1325", // Enchantment: Furor
-	"": "3719", // Enchantment: Warrior
+	"": "1325", // Enchantment: Furor (Boots of Mobility)
+	"": "3719", // Enchantment: Warrior (Poacher's Knife)
 	"": "3090", // Wooglet's Witchcap
-	"": "1324", // Enchantment: Homeguard
+	"": "1324", // Enchantment: Homeguard (Mercury's Treads)
 	"": "3093", // Avarice Blade
-	"": "1327", // Enchantment: Captain
-	"": "1326", // Enchantment: Alacrity
+	"": "1327", // Enchantment: Captain (Boots of Mobility)
+	"": "1326", // Enchantment: Alacrity (Boots of Mobility)
 	"": "3092", // Frost Queen's Claim
-	"": "1321", // Enchantment: Alacrity
-	"": "3716", // Enchantment: Runeglaive
-	"": "1320", // Enchantment: Furor
+	"": "1321", // Enchantment: Alacrity (Mercury's Treads)
+	"": "3716", // Enchantment: Runeglaive (Skirmisher's Sabre)
+	"": "1320", // Enchantment: Furor (Mercury's Treads)
 	"": "3715", // Skirmisher's Sabre
-	"": "1323", // Enchantment: Distortion
-	"": "3718", // Enchantment: Devourer
-	"": "1322", // Enchantment: Captain
-	"": "3717", // Enchantment: Cinderhulk
-	"": "1330", // Enchantment: Furor
+	"": "1323", // Enchantment: Distortion (Mercury's Treads)
+	"": "3718", // Enchantment: Devourer (Skirmisher's Sabre)
+	"": "1322", // Enchantment: Captain (Mercury's Treads)
+	"": "3717", // Enchantment: Cinderhulk (Skirmisher's Sabre)
+	"": "1330", // Enchantment: Furor (Ionian Boots of Lucidity)
 	"": "3911", // Martyr's Gambit
 	"": "3742", // Dead Man's Plate
 	"": "3599", // The Black Spear
@@ -71,18 +71,18 @@ var table = {
 	"": "3841", // Swindler's Orb
 	"": "3840", // Globe of Trust
 
-	"": "1307", // Enchantment: Captain
-	"": "1306", // Enchantment: Alacrity
-	"": "1309", // Enchantment: Homeguard
-	"": "1308", // Enchantment: Distortion
-	"": "1301", // Enchantment: Alacrity
+	"": "1307", // Enchantment: Captain (Boots of Swiftness)
+	"": "1306", // Enchantment: Alacrity (Boots of Swiftness)
+	"": "1309", // Enchantment: Homeguard (Boots of Swiftness)
+	"": "1308", // Enchantment: Distortion (Boots of Swiftness)
+	"": "1301", // Enchantment: Alacrity (Berserker's Greaves)
 	"": "1063", // Prospector's Ring
-	"": "1300", // Enchantment: Furor
+	"": "1300", // Enchantment: Furor (Berserker's Greaves)
 	"": "1062", // Prospector's Blade
 	"": "1303", // Enchantment: Distortion
-	"": "1302", // Enchantment: Captain
-	"": "1305", // Enchantment: Furor
-	"": "1304", // Enchantment: Homeguard
+	"": "1302", // Enchantment: Captain (Berserker's Greaves)
+	"": "1305", // Enchantment: Furor (Boots of Swiftness)
+	"": "1304", // Enchantment: Homeguard (Berserker's Greaves)
 	"": "1058", // Needlessly Large Rod
 	"": "1056", // Doran's Ring
 	"": "1057", // Negatron Cloak
@@ -203,7 +203,7 @@ var table = {
 	"": "3122", // Wicked Hatchet
 	"": "2053", // Raptor Cloak
 	"": "2054", // Diet Poro-Snax
-	"": "3048", // Seraph's Embrace
+	"": "3048", // Seraph's Embrace (Crystal Scar)
 	"": "3047", // Ninja Tabi
 	"": "2050", // Explorer's Ward
 	"": "2051", // Guardian's Horn
