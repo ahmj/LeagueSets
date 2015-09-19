@@ -79,3 +79,6 @@ The **BLOCKS**  object must contain a title, and multiple item blocks for your s
     
 Some sites may use there own custom item id's. In which case you will have to provide a JSON table of values to convert   
 (Remeber to include this file in the manifest). There is a template, /scripts/templates/table_template.js that may be helpful. The mobafire script is an example of this.
+
+### Disclaimer 
+LeagueSets isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.
