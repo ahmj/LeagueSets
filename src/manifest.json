@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "LeagueSets",
-  "description": "A tool used to create in-game item sets using guides from popular fansites such as LOKING, Mobafire, Champion.gg,ProBuilds and Solomid.",
+  "description": "A tool used to create in-game item sets using guides from popular fansites such as LOKING, Mobafire, Champion.gg,ProBuilds and more!",
   "version": "1.0.3",
   "icons": {
     "128": "./common/icon128.png",
