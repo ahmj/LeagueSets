@@ -11,10 +11,13 @@ loadMobafiretable(function () {
 
 	chrome.runtime.onMessage.addListener(function(msg, sender, response) {
 	    if ((msg.from === 'popup') && (msg.subject === 'guide')) {
-			var BLOCKS = [];
+			var BLOCKS = {
+				title: null,
+				items: [],
+			};
 
 			var title = $('.build-title h2').text();
-			BLOCKS.push(title);
+			BLOCKS.title = title;
 
 			$('.item-wrap').each(function (index) {
 				var header = $('h2', this).text().trim();
@@ -30,7 +33,7 @@ loadMobafiretable(function () {
 					header: header,
 					items: items
 				};
-				BLOCKS.push(ITEM_BLOCK);
+				BLOCKS.items.push(ITEM_BLOCK);
 			});
 	        response(BLOCKS);
 	    }

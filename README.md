@@ -67,14 +67,16 @@ Your script will follow the same structure as outlined below, where it will retu
 The **BLOCKS**  object must contain a title, and multiple item blocks for your set. The item sets require a title, and a list of item ids.
 
     var BLOCKS = {
-        "title_of_guide",
-        {
-            header: "title_of_block",
-            items: ["2003","2004, ..."]
-        }, 
-        {
-         ..
-        }
+        title: "title_of_guide",
+        items: [
+            {
+                header: "title_of_block",
+                items: ["2003","2004, ..."]
+            }, 
+            {
+             ..
+            },
+        ]
     };
     
 Some sites may use there own custom item id's. In which case you will have to provide a JSON table of values to convert   

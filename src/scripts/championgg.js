@@ -9,9 +9,12 @@ chrome.runtime.sendMessage({
 chrome.runtime.onMessage.addListener(function(msg, sender, response) {
     if ((msg.from === 'popup') && (msg.subject === 'guide')) {
 
-		var BLOCKS = [];
+		var BLOCKS = {
+			title: null, 
+			items: []
+		};
 		var title = stripURL($('.champ-img').attr('src')) + " - CHAMPION.GG";
-		BLOCKS.push(title);
+		BLOCKS.title = title;
 
 		$('.build-wrapper').each(function (index) {
 			var header = getTitle(index);
@@ -25,7 +28,7 @@ chrome.runtime.onMessage.addListener(function(msg, sender, response) {
 				header: header,
 				items: items
 			};
-			BLOCKS.push(ITEM_BLOCK);
+			BLOCKS.items.push(ITEM_BLOCK);
 		});
         response(BLOCKS);
     }

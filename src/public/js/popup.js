@@ -33,11 +33,10 @@ function copy() {
 }
 
 function createItemSet(blocks) {
-	title = blocks[0];
-	blocks.splice(0,1);
+	title = blocks.title;
 
-	blocks.unshift(consumablesBlock());
-	blocks.unshift(trinketBlock());
+	blocks.items.unshift(consumablesBlock());
+	blocks.items.unshift(trinketBlock());
 
 	var out = {
 		"title" : title, 
@@ -46,7 +45,7 @@ function createItemSet(blocks) {
 		"mode": "any",
 		"priority": true,
 		"sortrank": 0,
-		"blocks":  formatBlocks(blocks)
+		"blocks":  formatBlocks(blocks.items)
 	};
 	return out;
 }

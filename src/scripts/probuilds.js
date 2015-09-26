@@ -8,10 +8,13 @@ chrome.runtime.sendMessage({
 
 chrome.runtime.onMessage.addListener(function(msg, sender, response) {
     if ((msg.from === 'popup') && (msg.subject === 'guide')) {
-		var BLOCKS = [];
+		var BLOCKS = {
+			title: null,
+			items: [],
+		};
 		var temp_items_array = [];
 		var title = $('a.green').text();
-		BLOCKS.push(title);
+		BLOCKS.title = title;
 		$('#buy-order .buy-order').children('li').each(function (index) {
 			var id = $(this).attr("data-item");
 			if (id) {
@@ -19,11 +22,11 @@ chrome.runtime.onMessage.addListener(function(msg, sender, response) {
 			} else {
 				var block = createBlock(index,temp_items_array)
 				temp_items_array = [];
-				BLOCKS.push(block);
+				BLOCKS.items.push(block);
 			}
 		});
 		var block = createBlock(-1, temp_items_array);
-		BLOCKS.push(block);
+		BLOCKS.items.push(block);
 
         response(BLOCKS);
     }

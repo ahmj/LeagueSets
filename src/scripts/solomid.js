@@ -11,9 +11,12 @@ loadSoloMidTable(function() {
 
 	chrome.runtime.onMessage.addListener(function(msg, sender, response) {
 	    if ((msg.from === 'popup') && (msg.subject === 'guide')) {
-			var BLOCKS = [];
+			var BLOCKS = {
+				title: null,
+				items: [],
+			};
 			var title = $('.title h1').text();
-			BLOCKS.push(title);
+			BLOCKS.title = title;
 
 			// Starting Items
 			$('#ItemBuild0 .item-block div').children('.the-build').each(function () {
@@ -24,7 +27,7 @@ loadSoloMidTable(function() {
 					id = soloMidTable[stripURL(id)];
 					item_array.push(id);
 				});
-				BLOCKS.push(createBlock(header, item_array));
+				BLOCKS.items.push(createBlock(header, item_array));
 			});
 
 			// Final Items
@@ -35,7 +38,7 @@ loadSoloMidTable(function() {
 				id = soloMidTable[stripURL(id)];
 				item_array.push(id);
 			});
-			BLOCKS.push(createBlock(header, item_array));
+			BLOCKS.items.push(createBlock(header, item_array));
 
 			// Build Order
 			var header = $('.the-build-final-order .the-build-heading').text();
@@ -48,7 +51,7 @@ loadSoloMidTable(function() {
 					item_array.push(id);
 				}
 			});
-			BLOCKS.push(createBlock(header, item_array));
+			BLOCKS.items.push(createBlock(header, item_array));
 
 			//Situational Items
 			var header = "Situational Items";
@@ -58,7 +61,7 @@ loadSoloMidTable(function() {
 				id = soloMidTable[stripURL(id)];
 				item_array.push(id);
 			});
-			BLOCKS.push(createBlock(header, item_array));
+			BLOCKS.items.push(createBlock(header, item_array));
 
 	        response(BLOCKS);
 	    }

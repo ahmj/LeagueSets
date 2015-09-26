@@ -13,9 +13,12 @@ chrome.runtime.onMessage.addListener(function(msg, sender, response) {
 			1: "Core Items",
 			2: "Situational Items"
 		};
-		var BLOCKS = [];
+		var BLOCKS = {
+			title: null,
+			items: [],
+		};
 		var title = $('#guide-title').text();
-		BLOCKS.push(title);
+		BLOCKS.title = title;
 		$('#items .section-content').children('.item-groups').each(function (index) {
 			$(this).children('li').each(function (groupIndex) {
 				var text = $("div span", this).text();
@@ -28,7 +31,7 @@ chrome.runtime.onMessage.addListener(function(msg, sender, response) {
 					header: LOLKING_HEADERS[index] + ": " +text,
 					items: items
 				};
-				BLOCKS.push(ITEM_BLOCK);
+				BLOCKS.items.push(ITEM_BLOCK);
 			});
 		});
         response(BLOCKS);
