@@ -3,55 +3,45 @@
 
   "name": "LeagueSets",
   "description": "A tool used to create in-game item sets using guides from popular fansites such as LOKING, Mobafire, Champion.gg,ProBuilds and more!",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "icons": {
-    "128": "./common/icon128.png",
-    "48": "./common/icon48.png",
-    "16": "./common/icon16.png"
+    "128": "/common/icon128.png",
+    "48": "/common/icon48.png",
+    "16": "/common/icon16.png"
   },
 
   "background": {
     "persistent": false,
-    "scripts": ["./scripts/background.js"]
+    "scripts": ["/scripts/background.js"]
   },
 
   "content_scripts": [
   	{
   		"matches": ["http://www.lolking.net/guides/*"],
-  		"js": ["./common/jquery.min.js", "./scripts/lolking.js"],
-      "run_at":     "document_idle",
-      "all_frames": false
+  		"js": ["/common/jquery.min.js", "/scripts/lolking.js"]
   	},
     {
       "matches": ["http://www.probuilds.net/guide/*"],
-      "js": ["./common/jquery.min.js", "./scripts/probuilds.js"],
-      "run_at":     "document_idle",
-      "all_frames": false
+      "js": ["/common/jquery.min.js", "/scripts/probuilds.js"]
     },
     {
       "matches": ["*://champion.gg/champion/*"],
-      "js": ["./common/jquery.min.js", "./scripts/championgg.js"],
-      "run_at":     "document_idle",
-      "all_frames": false
+      "js": ["/common/jquery.min.js", "/scripts/championgg.js"]
     },
     {
       "matches": ["*://www.mobafire.com/league-of-legends/build/*"],
-      "js": ["./common/jquery.min.js", "./scripts/mobafire.js"],
-      "run_at":     "document_idle",
-      "all_frames": false
+      "js": ["/common/jquery.min.js", "/scripts/mobafire.js"]
     },
     {
       "matches": ["*://www.solomid.net/guide/view/*"],
-      "js": ["./common/jquery.min.js", "./scripts/solomid.js"],
-      "run_at":     "document_idle",
-      "all_frames": false
+      "js": ["/common/jquery.min.js", "/scripts/solomid.js"]
     }
   ],
 
   "page_action": {
-    "default_icon":"./common/icon128.png",
+    "default_icon":"/common/icon128.png",
     "default_title": "LeagueSet",
-    "default_popup": "./public/popup.html"
+    "default_popup": "/public/popup.html"
   },
 
   "permissions": [
