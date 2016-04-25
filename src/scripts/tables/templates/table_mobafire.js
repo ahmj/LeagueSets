@@ -29,12 +29,12 @@ var table_mobafire = {
 	"170": "2010", // Total Biscuit of Rejuvenation
 	"258": "3711", // Poacher's Knife
 	"72": "3098", // Frostfang
-	"273": "3714", // Enchantment: Warrior (Skirmisher's Sabre)
+	"273": "1412", // Enchantment: Warrior (Skirmisher's Sabre)
 	"259": "3713", // Ranger's Trailblazer
 	"218": "1329", // Enchantment: Homeguard (Boots of Mobility)
 	"171": "3290", // Twin Shadows
 	"221": "1328", // Enchantment: Distortion (Boots of Mobility)
-	"274": "3710", // Enchantment: Devourer (Stalker's Blade)
+	"274": "1403", // Enchantment: Devourer (Stalker's Blade)
 	"71": "3097", // Targon's Brace
 	"70": "3096", // Nomad's Medallion
 
@@ -52,9 +52,9 @@ var table_mobafire = {
 	"215": "1320", // Enchantment: Furor (Mercury's Treads)
 	"260": "3715", // Skirmisher's Sabre
 	"216": "1323", // Enchantment: Distortion (Mercury's Treads)
-	"270": "3718", // Enchantment: Devourer (Skirmisher's Sabre)
+	"270": "1415", // Enchantment: Devourer (Skirmisher's Sabre)
 	"214": "1322", // Enchantment: Captain (Mercury's Treads)
-	"271": "3717", // Enchantment: Cinderhulk (Skirmisher's Sabre)
+	"271": "1413", // Enchantment: Cinderhulk (Skirmisher's Sabre)
 	"225": "1330", // Enchantment: Furor (Ionian Boots of Lucidity)
 	"287": "3742", // Dead Man's Plate
 	"250": "3599", // The Black Spear
@@ -87,11 +87,11 @@ var table_mobafire = {
 	"75": "3101", // Stinger
 	"251": "3801", // Crystalline Bracer
 	"261": "3706", // Stalker's Blade
-	"277": "3707", // Enchantment: Warrior (Stalker's Blade)
+	"277": "1400", // Enchantment: Warrior (Stalker's Blade)
 	"253": "3800", // Righteous Glory
 	"243": "3504", // Ardent Censer
 	"276": "3708", // Enchantment: Runeglaive (Stalker's Blade)
-	"275": "3709", // Enchantment: Cinderhulk (Stalker's Blade)
+	"275": "1401", // Enchantment: Cinderhulk (Stalker's Blade)
 	"244": "3508", // Essence Reaver
 	"194": "3361", // Greater Stealth Totem (Trinket)
 
@@ -248,4 +248,36 @@ var table_mobafire = {
 	"278": "3726", // Devourer Enchatment
 	"280": "3724", // Runeglaive Enchatment
 	"281": "3723", // Warrior Enchatment
+
+	// Season 6
+	"294": "3094", // Rapid Firecannon 
+	"296": "3036", // Lord Dominik's Regards
+	"297": "3033", // Mortal reminder
+	"308": "3812", // Death's Dance
+	"304": "1083", // Cull
+	"303": "1082", // The Dark Seal
+	"298": "1039", // Hunter's Talisman
+	"299": "3711", // Tracker's Knife
+	"315": "1409", // Tracker's Knife (Cinderhulk)
+	"314": "1411", // Tracker's Knife (Devourer)
+	"319": "1410", // Tracker's Knife (Runic Echoes)
+	"317": "1408", // Tracker's Knife (Warrior)
+	"305": "2031", // Refillable Potion
+	"307": "2033", // Corrupting Potion
+	"306": "2032", // Hunter's Potion
+	"318": "", 	// Runic Echoes
+	"293": "2015", // Kircheis Shard
+	"295": "3034", // Giant Slayer
+	"87":  "3123", // Executioner's Calling
+	"300": "2301", // Eye of the Watchers
+	"301": "2302", // Eye of the Oasis
+	"302": "2303", // Eye of the Equinox 
+	"310": "3052", // Jaurim's Fist
+	"311": "3134", // Serrated Dirk
+	"309": "3133", // Caulfield's Warhammer
+	"322": "3147", // Duskblade of Draktharr
+	"320": "1414", // Skirmisher's Sabre (Runic Echoes)
+	"321": "1402", // Stalker's Blade (Runic Echoes)
+	"313": "3364", // Oracle Alteration
+
 }

@@ -30,12 +30,12 @@ var table_solomid = {
 	"total-biscuit-of-rejuvination": "2010", // Total Biscuit of Rejuvenation
 	"poachers-knife": "3711", // Poacher's Knife
 	"frostfang": "3098", // Frostfang
-	"skirmishers-sabre-enchantment---warrior": "3714", // Enchantment: Warrior (Skirmisher's Sabre)
+	"skirmishers-sabre-enchantment---warrior": "1412", // Enchantment: Warrior (Skirmisher's Sabre)
 	"rangers-trailblazer": "3713", // Ranger's Trailblazer
 	"": "1329", // Enchantment: Homeguard
 	"twin-shadows": "3290", // Twin Shadows
 	"": "1328", // Enchantment: Distortion
-	"stalkers-blade-enchantment---devour": "3710", // Enchantment: Devourer (Stalker's Blade)
+	"stalkers-blade-enchantment---devour": "1403", // Enchantment: Devourer (Stalker's Blade)
 	"targons-brace": "3097", // Targon's Brace
 	"nomads-medallion": "3096", // Nomad's Medallion
 
@@ -53,9 +53,9 @@ var table_solomid = {
 	"": "1320", // Enchantment: Furor
 	"skirmishers-sabre": "3715", // Skirmisher's Sabre
 	"": "1323", // Enchantment: Distortion
-	"skirmishers-sabre-enchantment---devour": "3718", // Enchantment: Devourer (Skirmisher's Sabre)
+	"skirmishers-sabre-enchantment---devour": "1415", // Enchantment: Devourer (Skirmisher's Sabre)
 	"": "1322", // Enchantment: Captain 
-	"skirmishers-sabre-enchantment---juggernaut": "3717", // Enchantment: Cinderhulk (Skirmisher's Sabre)
+	"skirmishers-sabre-enchantment---juggernaut": "1413", // Enchantment: Cinderhulk (Skirmisher's Sabre)
 	"": "1330", // Enchantment: Furor
 	"": "3911", // Martyr's Gambit
 	"": "3742", // Dead Man's Plate
@@ -122,11 +122,11 @@ var table_solomid = {
 	"": "3245", // Enchantment: Teleport
 	"crystalline-bracer": "3801", // Crystalline Bracer
 	"stalkers-blade": "3706", // Stalker's Blade
-	"stalkers-blade-enchantment---warrior": "3707", // Enchantment: Warrior (Stalker's Blade)
+	"stalkers-blade-enchantment---warrior": "1400", // Enchantment: Warrior (Stalker's Blade)
 	"rigtheous-glory": "3800", // Righteous Glory
 	"ardent-censer": "3504", // Ardent Censer
 	"stalkers-blade-enchantment---magus": "3708", // Enchantment: Runeglaive
-	"stalkers-blade-enchantment---juggernaut": "3709", // Enchantment: Cinderhulk
+	"stalkers-blade-enchantment---juggernaut": "1401", // Enchantment: Cinderhulk
 	"essence-reaver": "3508", // Essence Reaver
 	"greater-stealth-totem": "3361", // Greater Stealth Totem (Trinket)
 
@@ -303,4 +303,35 @@ var table_solomid = {
 	"enchantment-captain": "1327", // Captain Enchatment 
 	"enchantment-alacrity": "1326", // Alacrity Enchatment
 	"enchantment-homeguard": "1329", // Homeguard Enchatment
+
+	// Season 6
+	"": "3094", // Rapid Firecannon 
+	"": "3036", // Lord Dominik's Regards
+	"": "3033", // Mortal reminder
+	"": "3812", // Death's Dance
+	"": "1083", // Cull
+	"": "1082", // The Dark Seal
+	"": "1039", // Hunter's Talisman
+	"": "3711", // Tracker's Knife
+	"": "1409", // Tracker's Knife (Cinderhulk)
+	"": "1411", // Tracker's Knife (Devourer)
+	"": "1410", // Tracker's Knife (Runic Echoes)
+	"": "1408", // Tracker's Knife (Warrior)
+	"": "2031", // Refillable Potion
+	"": "2033", // Corrupting Potion
+	"": "2032", // Hunter's Potion
+	"": "", 	// Runic Echoes
+	"": "2015", // Kircheis Shard
+	"": "3034", // Giant Slayer
+	"": "3123", // Executioner's Calling
+	"": "2301", // Eye of the Watchers
+	"": "2302", // Eye of the Oasis
+	"": "2303", // Eye of the Equinox 
+	"": "3052", // Jaurim's Fist
+	"": "3134", // Serrated Dirk
+	"": "3133", // Caulfield's Warhammer
+	"": "3147", // Duskblade of Draktharr
+	"": "1414", // Skirmisher's Sabre (Runic Echoes)
+	"": "1402", // Stalker's Blade (Runic Echoes)
+	"": "3364", // Oracle Alteration
 }
