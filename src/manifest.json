@@ -3,7 +3,7 @@
 
   "name": "LeagueSets",
   "description": "A tool used to create in-game item sets using guides from popular fansites such as LOKING, Mobafire, Champion.gg,ProBuilds and more!",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "icons": {
     "128": "/common/icon128.png",
     "48": "/common/icon48.png",
@@ -45,7 +45,8 @@
   },
 
   "permissions": [
-    "clipboardWrite"
+    "clipboardWrite",
+    "tabs"
   ],
   "web_accessible_resources": [
     "scripts/tables/mobafire.json", "scripts/tables/solomid.json"

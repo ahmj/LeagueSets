@@ -14,7 +14,9 @@ function setInfo(info) {
 document.getElementById("copy").addEventListener("click", function () {
 	copy();
 })
-
+document.getElementById("bugs").addEventListener("click", function() {
+	chrome.tabs.create({url: 'https://github.com/ahmj/LeagueSets/issues'});
+});
 window.addEventListener('DOMContentLoaded', function() {
     chrome.tabs.query({
         active: true,
