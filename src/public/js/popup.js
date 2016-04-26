@@ -3,12 +3,13 @@ var data;
 var title;
 
 function setInfo(info) {
-	data = JSON.stringify(createItemSet(info), null, 2);
-	var json = "text/json;charset=utf-8," + encodeURIComponent(data);
+	data = createItemSet(info);
+	var dataString = JSON.stringify(data, null, 2);
+	var json = "text/json;charset=utf-8," + encodeURIComponent(dataString);
 	document.getElementById("download").setAttribute("href", "data:" + json);
 	document.getElementById("download").setAttribute("download", title + ".json");
 	document.getElementById("title").innerHTML = title;
-	document.getElementById("LeagueItemSet").value = data;
+	document.getElementById("LeagueItemSet").value = dataString;
 }
 
 document.getElementById("copy").addEventListener("click", function () {
@@ -16,6 +17,34 @@ document.getElementById("copy").addEventListener("click", function () {
 })
 document.getElementById("bugs").addEventListener("click", function() {
 	chrome.tabs.create({url: 'https://github.com/ahmj/LeagueSets/issues'});
+});
+document.getElementById("ctdrop").addEventListener("change", function() {
+	var dropdown = document.getElementById("ctdrop");
+	var selected = dropdown.options[dropdown.selectedIndex].value;
+	if (selected === "top") {
+		if (data.blocks[0].type !== "Trinkets") {
+			data.blocks.unshift(createItemsBlock(consumablesBlock()));
+			data.blocks.unshift(createItemsBlock(trinketBlock()));
+		}
+		if (data.blocks[(data.blocks.length - 1)].type === "Trinkets") {
+			data.blocks.pop();
+			data.blocks.pop();
+		}
+	} else if (selected === "bot") {
+		if (data.blocks[(data.blocks.length - 1)].type !== "Trinkets") {
+			data.blocks.push(createItemsBlock(consumablesBlock()));
+			data.blocks.push(createItemsBlock(trinketBlock()));
+		}
+		if (data.blocks[0].type === "Trinkets") {
+			data.blocks.shift();
+			data.blocks.shift();
+		}
+	}
+	var dataString = JSON.stringify(data, null, 2);
+	var json = "text/json;charset=utf-8," + encodeURIComponent(dataString);
+	document.getElementById("download").setAttribute("href", "data:" + json);
+	document.getElementById("download").setAttribute("download", title + ".json");
+	document.getElementById("LeagueItemSet").value = dataString;
 });
 window.addEventListener('DOMContentLoaded', function() {
     chrome.tabs.query({

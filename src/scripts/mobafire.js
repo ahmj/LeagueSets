@@ -16,10 +16,10 @@ loadMobafiretable(function () {
 				items: [],
 			};
 
-			var title = $('.build-title h2').text();
+			var title = $('.build-box:visible .build-title h2').text();
 			BLOCKS.title = title;
 
-			$('.item-wrap').each(function (index) {
+			$('.build-box:visible .item-wrap').each(function (index) {
 				var header = $('h2', this).text().trim();
 				var items = [];
 				$('.main-items', this).each(function (itemIndex) {
