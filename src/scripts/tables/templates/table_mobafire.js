@@ -181,7 +181,7 @@ var table_mobafire = {
 	"185": "3301", // Ancient Coin
 	"183": "3303", // Spellthief's Edge
 	"186": "3302", // Relic Shield
-	"16": "1037", // Pickaxe 
+	"16": "1037", // Pickaxe
 	"15": "1036", // Long Sword
 	"151": "1039", // Hunter's Machete
 	"17": "1038", // B. F. Sword
@@ -240,7 +240,7 @@ var table_mobafire = {
 
 	"176": "1325", // Furor Enchatment
 	"175": "1328", // Distortion Enchatment
-	"174": "1327", // Captain Enchatment 
+	"174": "1327", // Captain Enchatment
 	"173": "1326", // Alacrity Enchatment
 	"177": "1329", // Homeguard Enchatment
 
@@ -250,7 +250,7 @@ var table_mobafire = {
 	"281": "3723", // Warrior Enchatment
 
 	// Season 6
-	"294": "3094", // Rapid Firecannon 
+	"294": "3094", // Rapid Firecannon
 	"296": "3036", // Lord Dominik's Regards
 	"297": "3033", // Mortal reminder
 	"308": "3812", // Death's Dance
@@ -271,7 +271,7 @@ var table_mobafire = {
 	"87":  "3123", // Executioner's Calling
 	"300": "2301", // Eye of the Watchers
 	"301": "2302", // Eye of the Oasis
-	"302": "2303", // Eye of the Equinox 
+	"302": "2303", // Eye of the Equinox
 	"310": "3052", // Jaurim's Fist
 	"311": "3134", // Serrated Dirk
 	"309": "3133", // Caulfield's Warhammer
@@ -280,4 +280,15 @@ var table_mobafire = {
 	"321": "1402", // Stalker's Blade (Runic Echoes)
 	"313": "3364", // Oracle Alteration
 
+	// SEASON 7
+	"327": "1418", // Tracker's Knife (Bloodrazor)
+	"328": "1416", // Stalker's Blade (Bloodrazor)
+	"329": "1419", // Skirmisher's Sabre Blade (Bloodrazor)
+	"330": "3112", // Guradian's Orb
+	"331": "3184", // Guradian's Hammer
+	"332": "2055", // Control ward
+	"333": "3814", // Edge of Night
+	"334": "3109", // Knight's Vow
+	"335": "3252", // Poacher's Dirk
+	"336": "3107" // Redemption
 }

@@ -232,7 +232,7 @@ var table = {
 	"": "3301", // Ancient Coin
 	"": "3303", // Spellthief's Edge
 	"": "3302", // Relic Shield
-	"": "1037", // Pickaxe 
+	"": "1037", // Pickaxe
 	"": "1036", // Long Sword
 	"": "1039", // Hunter's Machete
 	"": "1038", // B. F. Sword
@@ -298,7 +298,7 @@ var table = {
 	"": "3068", // Sunfire Cape
 
 	// Season 6
-	"": "3094", // Rapid Firecannon 
+	"": "3094", // Rapid Firecannon
 	"": "3036", // Lord Dominik's Regards
 	"": "3033", // Mortal reminder
 	"": "3812", // Death's Dance
@@ -319,7 +319,7 @@ var table = {
 	"": "3123", // Executioner's Calling
 	"": "2301", // Eye of the Watchers
 	"": "2302", // Eye of the Oasis
-	"": "2303", // Eye of the Equinox 
+	"": "2303", // Eye of the Equinox
 	"": "3052", // Jaurim's Fist
 	"": "3134", // Serrated Dirk
 	"": "3133", // Caulfield's Warhammer
@@ -328,4 +328,15 @@ var table = {
 	"": "1402", // Stalker's Blade (Runic Echoes)
 	"": "3364", // Oracle Alteration
 
+	// SEASON 7
+	"": "1418", // Tracker's Knife (Bloodrazor)
+	"": "1416", // Stalker's Blade (Bloodrazor)
+	"": "1419", // Skirmisher's Sabre Blade (Bloodrazor)
+	"": "3112", // Guradian's Orb
+	"": "3184", // Guradian's Hammer
+	"": "2055", // Control ward
+	"": "3814", // Edge of Night
+	"": "3109", // Knight's Vow
+	"": "3252", // Poacher's Dirk
+	"": "3107" // Redemption
 }

@@ -70,7 +70,7 @@ function createItemSet(blocks) {
 	blocks.items.unshift(trinketBlock());
 
 	var out = {
-		"title" : title, 
+		"title" : title,
 		"type": "global",
 		"map": "any",
 		"mode": "any",
@@ -92,7 +92,7 @@ function formatBlocks(blocks) {
 
 function createItemsBlock(itemsBlock) {
 	var block = {
-		"type" : itemsBlock.header, 
+		"type" : itemsBlock.header,
 		"recMath": false,
         "minSummonerLevel": -1,
         "maxSummonerLevel": -1,
@@ -117,7 +117,7 @@ function createItemBlock(items) {
 
 function consumablesBlock() {
 	var header = 'Consumables';
-	var items = ["2003", "2004", "2041", "2043", "2044", "2137", "2138", "2139","2140"];
+	var items = ["2003", "2138", "2139","2140", "2031", "2032", "2033", "2055"];
 
 	var ITEM_BLOCK = {
 		header: header,
@@ -128,7 +128,7 @@ function consumablesBlock() {
 
 function trinketBlock() {
 	var header = 'Trinkets';
-	var items = ["3340","3361","3362", "3341", "3364", "3342","3363"];
+	var items = ["3340","3361", "3341", "3364", "3363"];
 	var ITEM_BLOCK = {
 		header: header,
 		items: items
