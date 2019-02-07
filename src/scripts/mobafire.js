@@ -16,13 +16,13 @@ loadMobafiretable(function () {
 				items: [],
 			};
 
-			var title = $('.build-box:visible .build-title h2').text();
+			var title = $('.top__title:visible h2').text().trim();
 			BLOCKS.title = title;
 
-			$('.build-box:visible .item-wrap').each(function (index) {
-				var header = $('h2', this).text().trim();
+			$('.view-guide__items').each(function (index) {
+				var header = $('.view-guide__items__bar:visible span', this).text().trim();
 				var items = [];
-				$('.main-items', this).each(function (itemIndex) {
+				$('.ajax-tooltip:visible', this).each(function (itemIndex) {
 					var id = $('a', this).attr('href');
 					id = mobafireTable[stripURL(id)];
 					if (id) {
