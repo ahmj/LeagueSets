@@ -2,8 +2,8 @@
   "manifest_version": 2,
 
   "name": "LeagueSets",
-  "description": "A tool used to create in-game item sets using guides from popular fansites such as Mobafire, Champion.gg, ProBuilds and more!",
-  "version": "1.0.8",
+  "description": "A tool used to create in-game item sets using guides from popular fansites such as Mobafire, Champion.gg, ProBuilds, U.GG and more!",
+  "version": "1.1.0",
   "icons": {
     "128": "/common/icon128.png",
     "48": "/common/icon48.png",
@@ -17,7 +17,7 @@
 
   "content_scripts": [
     {
-      "matches": ["http://www.probuilds.net/guide/*"],
+      "matches": ["*://www.probuilds.net/guide/*"],
       "js": ["/common/jquery.min.js", "/scripts/probuilds.js"]
     },
     {
@@ -27,6 +27,10 @@
     {
       "matches": ["*://www.mobafire.com/league-of-legends/build/*"],
       "js": ["/common/jquery.min.js", "/scripts/mobafire.js"]
+    },
+    {
+      "matches": ["*://u.gg/lol/champions/*"],
+      "js": ["/common/jquery.min.js", "/scripts/ugg.js"]
     }
   ],
 
