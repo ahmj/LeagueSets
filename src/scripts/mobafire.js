@@ -19,7 +19,7 @@ loadMobafiretable(function () {
 			var title = $('.top__title:visible h2').text().trim();
 			BLOCKS.title = title;
 
-			$('.view-guide__items').each(function (index) {
+			$('.view-guide__items:visible').each(function (index) {
 				var header = $('.view-guide__items__bar:visible span', this).text().trim();
 				var items = [];
 				$('.ajax-tooltip:visible', this).each(function (itemIndex) {
@@ -38,8 +38,7 @@ loadMobafiretable(function () {
 	        response(BLOCKS);
 	    }
 	});
-})
-
+});
 
 function loadMobafiretable(callback) {
 	$.getJSON(chrome.extension.getURL('./scripts/tables/mobafire.json'), function (data) {
