@@ -19,9 +19,8 @@ chrome.runtime.onMessage.addListener(function(msg, sender, response) {
 		$('.build-wrapper').each(function (index) {
 			var header = getTitle(index);
 			var items = [];
-			$(this).children('a').each(function (groupIndex) {
-				var item_url = $('img', this).attr('src');
-				var item = stripURL(item_url);
+			$(this).children('a').each(function () {
+				var item = $('img', this).attr('data-id');
 				items.push(item);
 			});
 			var ITEM_BLOCK = {
